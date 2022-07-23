@@ -1,5 +1,6 @@
-//
-// Created by Cracked Garnet on 21.07.2022.
-//
+#include "s21_math.h"
 
-// Пушим ветку develop, уважаемые тиммейтики
+int s21_abs(int x) {
+    if (x < 0) { x = x * -1; }
+    return x;
+}

@@ -1,6 +1,9 @@
 #ifndef C4_S21_MATH_2_S21_MATH_H
 #define C4_S21_MATH_2_S21_MATH_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int s21_abs(int x);
 long double s21_acos(double x);
