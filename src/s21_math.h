@@ -1,6 +1,8 @@
 #ifndef C4_S21_MATH_2_S21_MATH_H
 #define C4_S21_MATH_2_S21_MATH_H
 
+#define S21_EPS 1e-17
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
