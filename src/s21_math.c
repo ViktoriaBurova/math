@@ -38,3 +38,4 @@ long double s21_sin(double x) {
     }
     return cur;
 }
+
