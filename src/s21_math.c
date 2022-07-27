@@ -65,7 +65,7 @@ long double s21_sqrt(double x) {
     }
     return x;
 }
-
+//
 // long double s21_acos(double x) {
 //    return x;
 // }
