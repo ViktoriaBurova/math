@@ -41,7 +41,34 @@ long double s21_sin(double x) {
     return cur;
 }
 
-int main() {
-    printf("MY - %Lf, %Lf\n", s21_cos(15), s21_sin(15));
-    printf("THEY - %f, %f", cos(15), sin(15));
+int s21_abs(int x) {
+    if (x < 0) {
+        x *= -1;
+    }
+    return (unsigned int) x;
+}
+
+long double s21_ceil(double x) {
+    int s = x;
+    if (x - s > 0) {
+        s += 1;
+    }
+    long double res = s;
+    return res;
+}
+
+long double s21_sqrt(double x) {
+    int i = 2;
+    int num = x;
+    while(i <= num){
+        if(num % i == 0) {
+            printf("%d\n", i);
+            num = num / i;
+            if(num > 1)
+                printf("*\n");
+        }
+        else
+            i++;
+    }
+    return x;
 }
