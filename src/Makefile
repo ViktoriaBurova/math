@@ -22,7 +22,7 @@ clean:
 	rm -rf ./*.o ./*.a ./a.out gcov_test *.html *.css ./GcovReport ./*.gcno ./*.gcda ./report ./*.info ./math_o ./*.dSYM ./test_s21math ./CPPLINT* test
 
 test: test_s21math.c s21_math.a
-	$(CC) $(CFLAGS) -c test_s21math.c -o test.o
+	$(CC) $(CFLAGS) -c math_tests.c -o test.o
 	$(CC) test.o s21_math.a $(TEST_LIBS) -o test
 
 gcov_report: s21_math.a 

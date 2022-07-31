@@ -13,6 +13,7 @@ struct special {
 };
 
 #define s21_PI 3.14159265358979324
+#define s21_PI_2 -3.14159265358979324
 #define s21_NPI -3.14159265358979324
 #define s21_EPS 1e-17
 #define s21_ln10 2.30258509299404590109

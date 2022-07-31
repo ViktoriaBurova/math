@@ -15,19 +15,15 @@ double reader(double x) {
 }
 
 long double s21_sin(double x) {
-    int i = 1;
-    double cur = x;
-    double acc = 1;
-    double fact= 1;
-    double pow = x;
-    while (s21_fabs(acc) > S21_EPS){
-        fact *= ((2 * i) * (2 * i + 1));
-        pow *= -1 * x * x;
-        acc =  pow / fact;
-        cur += acc;
-        i++;
+    x = reader(x);
+    long double rez = x, y = x;
+    long double i = 1.;
+    while (s21_fabs(rez) > s21_EPS) {
+        rez = -1 * rez * x * x / (2 * i * (2 * i + 1));
+        i += 1.;
+        y += rez;
     }
-    return cur;
+    return y;
 }
 
 long double s21_cos(double x) {
